@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{c940f7b8-5077-45a1-87f7-067f3d024e10}">
+		<property name="assetPath">
+			<value>FunnyValentines_SleighRide_Full/07_LeadVox.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>181.92321995464852</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{afbd305f-93a3-456d-a5b4-c3c2bc3485c9}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="DataFile" id="{55746175-fac8-4949-a8b5-3d772898d2a0}">
+		<property name="assetPath">
+			<value>AngeloBoltini_Fragments_Full/Readme.txt</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{afbd305f-93a3-456d-a5b4-c3c2bc3485c9}</destination>
+		</relationship>
+	</object>
+</objects>

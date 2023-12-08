@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{2ace03af-edb1-4d87-a6ce-35259a7bfdc7}">
+		<property name="assetPath">
+			<value>AngeloBoltini_Fragments_Full/06_HiHat1.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>162.098231292517</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{afbd305f-93a3-456d-a5b4-c3c2bc3485c9}</destination>
+		</relationship>
+	</object>
+</objects>

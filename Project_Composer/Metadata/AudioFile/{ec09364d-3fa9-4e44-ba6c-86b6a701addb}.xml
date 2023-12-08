@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{ec09364d-3fa9-4e44-ba6c-86b6a701addb}">
+		<property name="assetPath">
+			<value>AngeloBoltini_Fragments_Full/28_Synth4.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>97.762131519274377</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{afbd305f-93a3-456d-a5b4-c3c2bc3485c9}</destination>
+		</relationship>
+	</object>
+</objects>
