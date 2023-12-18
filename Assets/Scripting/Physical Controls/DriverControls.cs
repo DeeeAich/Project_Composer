@@ -2,9 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class DriverControls : MonoBehaviour
 {
+
+    [SerializeField] InputActionReference leftJoy;
+    [SerializeField] InputActionReference rightJoy;
 
     [SerializeField] List<GameObject> treads = new();
     [SerializeField] List<Animator> treadAnimation = new();
@@ -23,7 +27,7 @@ public class DriverControls : MonoBehaviour
 
     private void Controlling()
     {
-
+        
         if (rightStick == leftStick)
             Move(rightStick);
         else if (leftStick == 0 && rightStick == 0)
@@ -114,14 +118,14 @@ public class DriverControls : MonoBehaviour
         rightTime += Time.deltaTime;
         leftTime += Time.deltaTime;
 
-        if (rightStick > 0 && rightStick < speed * Input.GetAxis("RightStick") -0.1f || rightStick < 0 && Input.GetAxis("RightStick") * speed + 0.1f < rightStick )
-            rightStick = Mathf.Lerp(rightStick, speed * Input.GetAxis("RightStick"), rightTime / maxSpeedTime);
+        if (rightStick > 0 && rightStick < speed * rightJoy.action.ReadValue<Vector2>().y -0.1f || rightStick < 0 && rightJoy.action.ReadValue<Vector2>().y * speed + 0.1f < rightStick )
+            rightStick = Mathf.Lerp(rightStick, speed * rightJoy.action.ReadValue<Vector2>().y, rightTime / maxSpeedTime);
         else
-            rightStick = Input.GetAxis("RightStick") * speed;
-        if (leftStick > 0 && speed * Input.GetAxis("LeftStick") - 0.1f > leftStick || leftStick < 0 && speed * Input.GetAxis("LeftStick") + 0.1f < leftStick)
-            leftStick = Mathf.Lerp(leftStick, speed * Input.GetAxis("LeftStick"), leftTime / maxSpeedTime);
+            rightStick = rightJoy.action.ReadValue<Vector2>().y * speed;
+        if (leftStick > 0 && speed * leftJoy.action.ReadValue<Vector2>().y - 0.1f > leftStick || leftStick < 0 && speed * leftJoy.action.ReadValue<Vector2>().y + 0.1f < leftStick)
+            leftStick = Mathf.Lerp(leftStick, speed * leftJoy.action.ReadValue<Vector2>().y, leftTime / maxSpeedTime);
         else
-            leftStick = speed * Input.GetAxis("LeftStick");
+            leftStick = speed * leftJoy.action.ReadValue<Vector2>().y;
         
 
 
